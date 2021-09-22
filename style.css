@@ -27,6 +27,7 @@ main {
     gap: 15px;
     flex-wrap: wrap;
     padding: 0 15px;
+    justify-content: center;
 }
 
 .galeria-items {
