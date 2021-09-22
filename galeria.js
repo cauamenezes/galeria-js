@@ -18,10 +18,10 @@ const criarItem = (urlImagem) => {
 
   const novoLink = document.createElement("a");
   novoLink.href = urlImagem;
-  novoLink.classList.add("galeria-items")
-  novoLink.innerHTML = `<img src="${urlImagem}" alt="mario"></img>`
+  novoLink.classList.add("galeria-items");
+  novoLink.innerHTML = `<img src="${urlImagem}" alt="mario"></img>`;
 
-  container.appendChild(novoLink)
+  container.appendChild(novoLink);
 
   //   container.innerHTML += `
   //     <a href="${urlImagem}" class="galeria-items">
