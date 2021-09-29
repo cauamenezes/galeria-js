@@ -65,3 +65,70 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+.slide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -999;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+.slide:target {
+  z-index: 999;
+  opacity: 1;
+}
+
+.slide .imagem-container {
+  position: relative;
+  background-color: turquoise;
+  height: 90%;
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide .icones {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #0007;
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide .fechar {
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+}
+
+.slide .icones:hover {
+  background: #ff4949;
+}
+
+.slide .anterior {
+  left: 0;
+  font-size: 2rem;
+}
+
+.slide .proximo {
+  right: 0;
+  font-size: 2rem;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
